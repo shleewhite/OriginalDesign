@@ -2,17 +2,17 @@ void setup()
 {
 	size(400, 400);
 }
+int sunHeight = 10;
 void draw()
 {
- 	background();
+ 	setting();
  	body();
  	head();
  	straps();
 }
-void background()
-{ background(100, 230, 255);
-    fill(234, 0, 255);
-    triangle(0,175,100,175,50,10);
+void setting()
+{ 
+	background(100, 230, 255);
     fill(61, 255, 106);
     rect(0,175,400,400);
     noFill();
@@ -45,7 +45,7 @@ void background()
     fill(247, 255, 0);
     ellipse(350,310,15,15);
     }
-   
+
 void body() 
 {
     fill(84,84,255);
@@ -96,4 +96,4 @@ void straps()
     ellipse(108,245,15,25);
     rect(265,220,15,25);
     ellipse(272,245,15,25);
-};
+}

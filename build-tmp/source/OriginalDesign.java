@@ -18,17 +18,17 @@ public void setup()
 {
 	size(400, 400);
 }
+int sunHeight = 10;
 public void draw()
 {
- 	background();
+ 	setting();
  	body();
  	head();
  	straps();
 }
-public void background()
-{ background(97, 231, 255);
-    fill(234, 0, 255);
-    triangle(0,175,100,175,50,10);
+public void setting()
+{ 
+	background(100, 230, 255);
     fill(61, 255, 106);
     rect(0,175,400,400);
     noFill();
@@ -61,7 +61,7 @@ public void background()
     fill(247, 255, 0);
     ellipse(350,310,15,15);
     }
-   
+
 public void body() 
 {
     fill(84,84,255);
@@ -112,7 +112,7 @@ public void straps()
     ellipse(108,245,15,25);
     rect(265,220,15,25);
     ellipse(272,245,15,25);
-};
+}
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "OriginalDesign" };
     if (passedArgs != null) {
