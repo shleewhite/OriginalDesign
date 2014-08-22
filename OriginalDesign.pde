@@ -10,7 +10,7 @@ void draw()
  	straps();
 }
 void background()
-{ background(97, 231, 255);
+{ background(100, 230, 255);
     fill(234, 0, 255);
     triangle(0,175,100,175,50,10);
     fill(61, 255, 106);
