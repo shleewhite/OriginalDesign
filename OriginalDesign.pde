@@ -1,18 +1,28 @@
+int sunHeight = 1;
+
 void setup()
 {
 	size(400, 400);
+	frameRate(50);
 }
-int sunHeight = 10;
+
 void draw()
 {
  	setting();
  	body();
  	head();
  	straps();
+ 	sunHeight = sunHeight + 1;
+ 	if (sunHeight > 300){
+ 		sunHeight = 0;
+ 	};
+ 	
 }
 void setting()
 { 
 	background(100, 230, 255);
+	fill(255, 255, 0);
+	ellipse(200, sunHeight, 200, 200);
     fill(61, 255, 106);
     rect(0,175,400,400);
     noFill();
